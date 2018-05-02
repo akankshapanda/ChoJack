@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/red"
+    tools:context=".GameActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="106dp"
+        android:layout_height="318dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout10">
+
+        <Button
+            android:id="@+id/stay"
+            android:layout_width="106dp"
+            android:layout_height="40dp"
+            android:text="Stay"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/dice2You"
+            android:layout_width="106dp"
+            android:layout_height="106dp"
+            app:srcCompat="@drawable/dice_6" />
+
+        <Button
+            android:id="@+id/roll2"
+            android:layout_width="106dp"
+            android:layout_height="40dp"
+            android:text="Roll!"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/dice1You"
+            android:layout_width="106dp"
+            android:layout_height="106dp"
+            app:srcCompat="@drawable/dice_6" />
+
+        <Button
+            android:id="@+id/roll1"
+            android:layout_width="106dp"
+            android:layout_height="40dp"
+            android:text="Roll!" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="88dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="110dp"
+        android:layout_marginTop="176dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout9"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout4"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout11">
+
+        <TextView
+            android:id="@+id/Bet"
+            android:layout_width="96dp"
+            android:layout_height="41dp"
+            android:text="Let's Play"
+            android:textColor="#ECEFF1"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/EnterAmount"
+            android:layout_width="96dp"
+            android:layout_height="36dp"
+            android:text="Press Roll"
+            android:textColor="#ECEFF1"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="106dp"
+        android:layout_height="318dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout9"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout10"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:layout_width="106dp"
+            android:layout_height="40dp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/dice2CPU"
+            android:layout_width="106dp"
+            android:layout_height="106dp"
+            app:srcCompat="@drawable/dice_6" />
+
+        <Button
+            android:layout_width="106dp"
+            android:layout_height="40dp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/dice1CPU"
+            android:layout_width="106dp"
+            android:layout_height="106dp"
+            app:srcCompat="@drawable/dice_6" />
+
+        <Button
+            android:layout_width="106dp"
+            android:layout_height="40dp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="296dp"
+        android:layout_height="95dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/home_button"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="Home" />
+
+        <TextView
+            android:id="@+id/fb_name"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="Welcome!"
+            android:textColor="#ECEFF1"/>
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="Reset" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="311dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="43dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginStart="25dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/cpuMoney"
+            android:layout_width="143dp"
+            android:layout_height="19dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="CPU: $100.00"
+            android:textColor="#ECEFF1"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/youMoney"
+            android:layout_width="143dp"
+            android:layout_height="19dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="You: $100.00"
+            android:textColor="#ECEFF1"
+            tools:layout_editor_absoluteX="130dp"
+            tools:layout_editor_absoluteY="16dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

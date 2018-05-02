@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/red"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="371dp"
+        android:layout_height="504dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.428">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="#ECEFF1"
+            android:textSize="40dp"
+            android:text="Welcome Player!"/>
+
+        <TextView
+            android:layout_width="328dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="100dp"
+            android:text="Rules:
+            The higher dice wins $20 from opponent. If a 6 is rolled that player gets $20 and the opponent has no change.If after the first roll the dice are the same, staying will make both players money the lower of the two. When rolling the second dice 11 and 12 bust and the player loses $20. If a play sums to 10 they gain $40. The winner is the player with the higher sum and wins $20 from opponent.  "
+            android:textColor="#ECEFF1" />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="50dp" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Cho-Jack</string>
+    <string name="facebook_app_id">1167405680067836</string>
+    <string name="fb_login_protocol_scheme">fb1167405680067836</string>
+</resources>
